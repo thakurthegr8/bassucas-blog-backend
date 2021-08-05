@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "blog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Untitled",
+      "required": false,
+      "minLength": 5,
+      "maxLength": 25
+    },
+    "description": {
+      "type": "richtext",
+      "default": "Nothing is here",
+      "maxLength": 1200,
+      "minLength": 25,
+      "required": true
+    }
+  }
+}
