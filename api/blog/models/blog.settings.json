@@ -21,7 +21,6 @@
     "description": {
       "type": "richtext",
       "default": "Nothing is here",
-      "maxLength": 1200,
       "minLength": 25,
       "required": true
     },
