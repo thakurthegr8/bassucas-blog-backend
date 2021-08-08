@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "blog"
+    "name": "blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,11 +13,10 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string",
+      "type": "text",
       "default": "Untitled",
       "required": false,
-      "minLength": 5,
-      "maxLength": 25
+      "minLength": 5
     },
     "description": {
       "type": "richtext",
@@ -24,6 +24,11 @@
       "maxLength": 1200,
       "minLength": 25,
       "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "blogs",
+      "dominant": true
     }
   }
 }
